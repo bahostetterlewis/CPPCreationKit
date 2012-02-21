@@ -31,7 +31,7 @@ if [ ! -f $FILEL ] #checks if file doesn't exist
  	 createCPP
 else
 	echo "<${FILE}> already exists in location <`pwd`/${FILE}>"
-	echo "Do you wish to overright <${FILE}>, this process can't be reversed"
+	echo "Do you wish to overwrite <${FILE}>, this process can't be reversed"
 
 	while true; do #gets user input to confirm or deny rewriting file
 		read -p "  yes  or  no  " yn
